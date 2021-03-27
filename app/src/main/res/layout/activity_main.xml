@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/LottieImage"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_marginTop="-60dp"
+        app:lottie_fileName="Animation.json"
+
+        />
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="-100dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/LottieImage">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <cn.iwgang.countdownview.CountdownView
+                android:id="@+id/mycountdown1"
+                style="@style/CustomFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="36dp"
+                android:elevation="8dp"
+                app:isHideTimeBackground="false"
+                app:isShowDay="true"
+                app:isShowHour="true"
+                app:isShowMinute="true"
+                app:isShowSecond="true"
+                app:isTimeTextBold="true"
+                app:suffixDay="d"
+                app:suffixGravity="bottom"
+                app:suffixHour="h"
+                app:suffixMinute="m"
+                app:suffixSecond="s"
+                app:suffixTextColor="#000000"
+                app:suffixTextSize="12sp"
+                app:timeBgColor="@color/colorAccent"
+                app:timeBgRadius="4dp"
+                app:timeTextColor="#FFFFFF"
+                app:timeTextSize="32sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textViewWeek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/rounded"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="374242"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tuần"
+                android:textColor="#0A4CF1"
+                android:textSize="16dp"
+                android:layout_marginTop="-2dp"
+                android:fontFamily="@font/open_sans"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textViewHour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/rounded"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="374242"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="giờ"
+                android:textColor="#0A4CF1"
+                android:textSize="16dp"
+                android:layout_marginTop="-2dp"
+                android:fontFamily="@font/open_sans"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textViewMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/rounded"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="10000"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="phút"
+                android:textColor="#0A4CF1"
+                android:textSize="16dp"
+                android:layout_marginTop="-2dp"
+                android:fontFamily="@font/open_sans"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textViewSec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/rounded"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="10000"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="giây"
+                android:textColor="#0A4CF1"
+                android:textSize="16dp"
+                android:layout_marginTop="-2dp"
+                android:fontFamily="@font/open_sans"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                />
+        </LinearLayout>
+
+
+
+    </ViewFlipper>
+
+    <TextView
+        android:id="@+id/textViewTop"
+        style="@style/CustomFont"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="32dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/viewFlipper"
+        android:text="Đếm ngược ngày thi THPTQG"
+        android:textSize="16sp"
+     />
+
+    <TextView
+        android:id="@+id/textViewContent"
+        style="@style/CustomFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTop"
+        android:layout_marginTop="5dp"
+        android:text="Ngày thi (Dự đoán): 25-06-2021"
+        android:layout_marginLeft="120dp"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/textViewTop"
+        android:layout_marginTop="-2dp"
+        android:background="@drawable/clock"
+        android:layout_marginLeft="80dp" />
+
+    <ImageButton
+        android:id="@+id/rightbtn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/right_arrow"
+        android:layout_marginTop="-78dp"
+        android:layout_marginLeft="330dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:layout_below="@id/LottieImage"
+        />
+    <ImageButton
+        android:id="@+id/leftbtn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/left_arrow"
+        android:layout_marginTop="-78dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="330dp"
+        android:background="@color/white"
+        android:layout_below="@id/LottieImage"
+        />
+    <ImageButton
+        android:id="@+id/quotebtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/quote"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:layout_below="@id/textViewContent"
+        />
+
+    <TextView
+        android:id="@+id/textViewQuote"
+        style="@style/CustomFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quotebtn"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/open_sans"
+        android:text="Khi chuyển từ thể lỏng sang thể rắn, thể tích nước tăng lên thêm 9%"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:elevation="16dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        app:cnb_menuResource="@menu/bottom_menu"
+        />
+
+</RelativeLayout>

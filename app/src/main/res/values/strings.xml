@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Đếm ngược ngày thi THPTQG</string>
+    <string name="quote1">Khi chuyển từ thể lỏng sang thể rắn, thể tích nước tăng lên thêm 9%</string>
+    <string name="quote2">Hidro (H) là nguyên tố phổ biến nhất vũ trụ. Còn ở trái đất, nguyên tố đó là Oxy (O)</string>
+    <string name="quote3">Brom (Br) và Thuỷ ngân (Hg) là những nguyên tố duy nhất tổn tại ở thể lỏng trong điều kiện thường</string>
+    <string name="quote4">"J" là chữ cái duy nhất không xuất hiện trong bảng tuần hoàn hoá học</string>
+    <string name="quote5">Ánh sáng có thể chui sâu xuống khoảng 80m nước biển</string>
+    <string name="quote6">Trong 1 giây, năng lượng toả ra từ Mặt Trời đủ sức hâm nóng 3,200 tỉ tỉ bữa ăn nhanh</string>
+    <string name="quote7">Tháp Eiffel (Pháp) có thể cao hơn đến 15cm suốt mùa hè do sự giãn nở vì nhiệt</string>
+    <string name="quote8">Tổng cân nặng của loài kiến tương đương tổng cân nặng dân số trên Trái Đất</string>
+    <string name="quote9">Trung bình mỗi giây có 4 trẻ em sinh ra và 2 người qua đời</string>
+    <string name="quote10">Tim của người đập khoảng 100.000 lần mỗi ngày và 35 triệu lần mỗi năm</string>
+    <string name="quote11">Nếu bạn đủ kiên nhẫn để gãi mũi cá mập, nó sẽ rơi vào trạng thái bị thôi miên</string>
+    
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
